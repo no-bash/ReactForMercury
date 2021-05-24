@@ -1,0 +1,198 @@
+body{
+  /* font-family: 'IBM Plex Mono', monospace; */
+  font-family: 'Montserrat', sans-serif;
+  background: url('./assets/background-image.png') no-repeat;
+  color: white;
+}
+
+
+.App{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+
+
+
+
+a{
+  text-decoration: none;
+  color: #000;
+  transition: 0.5s;
+}
+
+a:hover{
+  text-decoration: underline;
+}
+
+.main{
+  width: 80%;
+  max-width: 1200px;
+  margin-top: 60px;
+  background: #FFFFFF;
+  color: black;
+  border-radius: 10px;
+  padding: 30px 50px;
+}
+
+.header{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 65px;
+}
+
+.header__logo{
+  font-family: IBM Plex Mono;
+  font-weight: 800;
+  font-size: 24px;
+  line-height: 31px;
+}
+
+.header__link{
+  font-size: 24px;
+  line-height: 29px;
+}
+
+.hero__title{
+  font-family: 'IBM Plex Mono', monospace;
+  font-weight: 400;
+  font-size: 36px;
+  line-height: 47px;
+}
+
+
+.hero__cards{
+  display: flex;
+  justify-content: space-between;
+}
+
+
+.hero__card{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  max-width: 370px;
+  padding-top: 20px;
+  padding-left: 15px;
+  padding-bottom: 15px;
+  background: #328ACA;
+  box-shadow: 0px 16px 24px rgba(0, 0, 0, 0.06), 0px 2px 6px rgba(0, 0, 0, 0.04), 0px 0px 1px rgba(0, 0, 0, 0.04);
+  border-radius: 5px;
+  color: #FFFFFF;
+  margin-left: 10px;
+}
+
+.hero__card-info--date{
+  font-size: 18px;
+  line-height: 22px;
+}
+
+.hero__card-info--temp{
+  font-weight: 500;
+  font-size: 24px;
+  line-height: 29px;
+}
+
+.feels-like{
+  font-size: 14px;
+  line-height: 17px;
+}
+
+.hero__card-icon img{
+  margin-left: 30px;
+  width: 96px;
+  height: 96px;
+}
+
+.weather-block{
+  margin-top: 100px;
+}
+
+.input-block{
+  margin-bottom: 40px;
+}
+
+.select{
+  box-shadow: 0px 16px 24px rgba(0, 0, 0, 0.06), 0px 2px 6px rgba(0, 0, 0, 0.04), 0px 0px 1px rgba(0, 0, 0, 0.04);
+  background: #FFFFFF;
+  border: 1px solid rgba(0, 0, 0, 0.3);
+  padding: 20px;
+  font-size: 18px;
+  line-height: 22px;
+  margin-right: 20px;
+  max-width: 300px;
+  width: 100%;
+}
+
+.input-date{
+  width: 100%;
+  max-width: 300px;
+  box-shadow: 0px 16px 24px rgba(0, 0, 0, 0.06), 0px 2px 6px rgba(0, 0, 0, 0.04), 0px 0px 1px rgba(0, 0, 0, 0.04);
+  background: #FFFFFF;
+  border: 1px solid rgba(0, 0, 0, 0.3);
+  padding: 20px;
+}
+
+.hero__card-orange{
+  width: 100%;
+  
+  background: linear-gradient(105.26deg, #EDB526 0.79%, #EDB526 0.8%, rgba(209, 161, 35, 0.71) 98.28%);
+  box-shadow: 0px 16px 24px rgba(0, 0, 0, 0.06), 0px 2px 6px rgba(0, 0, 0, 0.04), 0px 0px 1px rgba(0, 0, 0, 0.04);
+  border-radius: 10px;
+}
+
+@media (max-width:600px) {
+  .App{
+    flex-direction: column;
+  }
+  .main{
+    width: 70%;
+    max-width: 400px;
+    margin-top: 40px;
+    padding: 20px 40px;
+  }
+  /* .hero__card{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    max-width: 370px;
+    padding-top: 20px;
+    padding-left: 15px;
+    padding-bottom: 15px;
+    background: #328ACA;
+    box-shadow: 0px 16px 24px rgba(0, 0, 0, 0.06), 0px 2px 6px rgba(0, 0, 0, 0.04), 0px 0px 1px rgba(0, 0, 0, 0.04);
+    border-radius: 5px;
+    color: #FFFFFF;
+    
+  } */
+  .hero__title{
+    max-width: 250px;
+    font-size: 24px;
+    line-height: 30px;
+  }
+  .header__logo{
+    font-size: 20px;
+    line-height: 31px;
+  }
+  .header__link{
+    font-size: 18px;
+    line-height: 20px;
+  }
+}
+
+@media (max-width:1466px) {
+  .App{
+    flex-direction: column;
+  }
+  .main{
+    width: 60%;
+  }
+  .hero__title{
+    max-width: 350px;
+
+  }
+}
